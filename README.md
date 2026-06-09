@@ -1,6 +1,6 @@
-# sfmc-de-searcher
+# sfmc-CB-searcher
 
-a Chrome extension that helps search DE from various folders
+a Chrome extension that helps search Content Builder assets from various folders
 
 
-https://chromewebstore.google.com/detail/sfmc-de-seacher/ihmnjnnopabkioklegcodjfaonmfhcki
+{CHROME_URL}

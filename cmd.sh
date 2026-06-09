@@ -11,4 +11,4 @@ echo "Packaging version $version"
 # create zip
 # if zip is not installed, install it first
 [ ! -x "$(command -v zip)" ] && sudo apt-get install -y zip
-zip -r ./dist/smfc-ds-$version.zip ./src
+zip -r ./dist/sfmc-cb-$version.zip ./src

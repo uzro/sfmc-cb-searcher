@@ -66,7 +66,7 @@ if (IS_POPUP_CONTEXT) {
   });
 
   button.addEventListener("click", async () => {
-    demsg.textContent = "Refreshing Content Builder assets...";
+    demsg.textContent = "Re-fetching all Content Builder assets...";
     dePanel.innerHTML = "";
 
     try {
@@ -118,7 +118,7 @@ if (IS_POPUP_CONTEXT) {
 
               persistProgress(
                 Array.from(assetMap.values()),
-                `Refreshing categories: ${processedCategories + 1}/${categories.length}, page ${pageIndex}`
+                `Re-fetching categories: ${processedCategories + 1}/${categories.length}, page ${pageIndex}`
               );
             }
           );
@@ -126,7 +126,7 @@ if (IS_POPUP_CONTEXT) {
           processedCategories += 1;
           persistProgress(
             Array.from(assetMap.values()),
-            `Refreshing categories: ${processedCategories}/${categories.length}`
+            `Re-fetching categories: ${processedCategories}/${categories.length}`
           );
         }
       );
@@ -134,10 +134,10 @@ if (IS_POPUP_CONTEXT) {
       mainData = Array.from(assetMap.values());
       persistProgress(
         mainData,
-        `Refreshed ${mainData.length} assets from ${categories.length} categories.`
+        `Re-fetched ${mainData.length} assets from ${categories.length} categories.`
       );
     } catch (error) {
-      demsg.textContent = "Please open Content Builder page and refresh again.";
+      demsg.textContent = "Please open a Content Builder page and re-fetch again.";
       console.log("refresh error", error);
     }
   });
@@ -306,7 +306,7 @@ function createMatchListDom(items, keyword) {
 
     const folder = document.createElement("div");
     folder.className = "match-folder";
-    folder.innerHTML = `Folder: ${highlightMatch(item.folderPath, keyword)}`;
+    folder.innerHTML = `Path: ${highlightMatch(item.folderPath, keyword)}`;
 
     matchItem.appendChild(title);
     matchItem.appendChild(badges);
