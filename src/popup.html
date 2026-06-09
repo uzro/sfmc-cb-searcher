@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CB Util</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div>
+            <button id="refreshde" class="btn-default">
+                Refresh CB Assets
+            </button>
+            <button id="exportBtn" class="btn-default" style="margin-right: 20px; display: none;">
+                export AS
+            </button>
+        </div>
+        <div id="content">
+            <div class="input-box">
+                <!-- <label for="dename" class="input-label"></label> -->
+                <input type="text" id="dename" class="sim-input input-data" placeholder="id, name, path">
+                <button id="desubmit" class="btn-primary icon-btn" title="Search" aria-label="Search">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path
+                            d="M10.5 4a6.5 6.5 0 1 0 4.16 11.52l4.4 4.4 1.42-1.42-4.4-4.4A6.5 6.5 0 0 0 10.5 4Zm0 2a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Z">
+                        </path>
+                    </svg>
+                </button>
+                <button id="inputClear" class="btn-warning icon-btn" title="Clear" aria-label="Clear">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path
+                            d="M6.225 4.811 4.81 6.225 10.585 12 4.81 17.775l1.415 1.414L12 13.415l5.775 5.774 1.414-1.414L13.415 12l5.774-5.775-1.414-1.414L12 10.585 6.225 4.811Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="output" class="alert"></div>
+
+            <div id="de-panel" class="de-panel"></div>
+
+            <div class="summary-bar">
+                <div class="tag" style="background-color: rgb(45, 183, 245);" id="denum">
+                    0 Assets
+                </div>
+                <div class="tag" style="background-color: rgb(135, 208, 104);" id="detime">
+                    1900/01/01
+                </div>
+            </div>
+
+        </div>
+        <script src="popup.js"></script>
+    </main>
+</body>
+
+</html>
