@@ -21,6 +21,7 @@
       "16": "icon.png",
       "48": "icon.png"
    },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyvjN2Hee8a5tISpw4lBQunFdOqzL3zCuRtXAnCvBGt5LyLhxkVnJ9jEQKgOmMuT7KVNx2TlIx36C7G41GZsLOfPlbtC+OhPhEiluUcd+MOdmQMWQSr67OFYOK0ZwBjAInGzHQgZ27wJbg93Y2SUmmWre4mM9MNChpWlq9mzHP8FnLzMgr6nlwQK2QISEWLGgkjEOwDcE16Gn0d1xL8JkrkRY5SsLsboGFjq0fz8CKgVivyDkdja8R/bdQK5qhzZZ4MGoiyki6listD7naOCan6jXqOWB5OPUrQygxLodUWFHYGOGm+fbwL66wbfT2qyTpDM1onMKaB0jUVf92DyCPQIDAQAB",
    "manifest_version": 3,
    "name": "SFMC CB Searcher",
    "permissions": [
